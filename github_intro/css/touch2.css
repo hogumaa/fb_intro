@@ -1,0 +1,366 @@
+@charset "UTF-8";
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  font-family: Pretendard !important;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* outline: none; */
+  /* letter-spacing :-1px; */
+}
+
+
+.intro01 {
+  background-image: url("../images/bg/bg_intro02.png");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_logo {
+  margin-top: 10px;
+  margin-left: -90%;
+  z-index: 9;
+}
+
+.intro_bubble {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_bubble .bubble {
+  width: 400px;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.intro_feelbot01 {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.feelbot {
+  position: fixed;
+  width: 250px;
+  animation: motion 0.5s linear 0s infinite alternate;
+}
+@keyframes motion {
+  0% {
+    margin-top: 14%;
+  }
+  100% {
+    margin-top: 14.5%;
+  }
+}
+
+.intro_ufo {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  width: 2080px;
+  height: 1080px;
+  margin-top: -7.6%;
+  margin-left: 1.8%;
+  -webkit-animation: spin 5s infinite linear;
+  -o-animation: spin 5s infinite linear;
+  -moz-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+  animation-direction: alternate;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(10deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.intro_ufo img {
+  position: absolute;
+}
+
+.intro_ufo .red {
+  top: 12%;
+  left: 45%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px red);
+  animation: blink-effect 1s alternate infinite;
+}
+.red:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .orange {
+  top: 66%;
+  left: 62%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px orange);
+  animation: blink-effect 1s alternate infinite;
+}
+.orange:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .yellow {
+  left: 30%;
+  top: 24%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px yellow);
+  animation: blink-effect 1s alternate infinite;
+}
+.yellow:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .green {
+  left: 62%;
+  top: 24%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px rgb(35, 221, 35));
+  animation: blink-effect 1s alternate infinite;
+}
+.green:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .blue {
+  left: 26%;
+  top: 45%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px rgb(28, 28, 255));
+  animation: blink-effect 1s alternate infinite;
+}
+.blue:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .purple {
+  left: 65%;
+  top: 45%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px rgb(194, 0, 194));
+  animation: blink-effect 1s alternate infinite;
+}
+.purple:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .pink {
+  left: 30%;
+  top: 66%;
+  transition: all 0.3s;
+  animation: blink-effect 1s alternate infinite;
+  filter: drop-shadow(0px 10px 20px rgb(243, 89, 161));
+}
+.pink:hover {
+  transform: scale(1.2);
+}
+
+.intro_ufo .black {
+  left: 45%;
+  top: 80%;
+  transition: all 0.3s;
+  filter: drop-shadow(1px 10px 20px rgb(0, 0, 0));
+  animation: blink-effect 1s alternate infinite;
+}
+.black:hover {
+  transform: scale(1.2);
+}
+
+/* 깜빡이기 */
+@keyframes blink-effect {
+  0% {
+    filter: drop-shadow(1px 1px 1px #0e022c);
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 3%;
+    margin-left: 0%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 240px;
+    top: 15%;
+    left: 41%;
+  }
+
+  .intro_ufo {
+    margin-left: 1%;
+    margin-bottom: 11%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro_bubble {
+    padding-top: 3%;
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro_bubble .bubble {
+    margin-top: 166px;
+  }
+
+  .intro_feelbot01 .feelbot {
+    top: 18%;
+    left: 39.8%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .intro_logo img {
+    margin-left: 30px;
+  }
+
+  .intro_bubble .bubble {
+    margin-top: 150px;
+  }
+
+  .intro_feelbot01 .feelbot {
+    top: 20%;
+    left: 38%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro_logo img {
+    margin-left: 60px;
+  }
+
+  .intro_bubble .bubble {
+    top: 13%;
+    left: 27.5%;
+    width: 350px;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 34%;
+    top: 25%;
+  }
+  .intro_ufo {
+    width: 1600px;
+    height: 898px;
+    margin-top: -6%;
+    margin-left: -1.5%;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .intro_logo img {
+    margin-left: 60px;
+  }
+
+  .intro_bubble .bubble {
+    top: -7%;
+    left: 11%;
+    width: 80%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    width: 240px;
+    left: 32%;
+    top: 25%;
+  }
+  .intro_ufo {
+    width: 1300px;
+    height: 738px;
+    margin-top: 0%;
+    margin-left: -2%;
+  }
+
+  .intro_ufo img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro_logo img {
+    margin-left: 80px;
+  }
+
+  .intro_bubble .bubble {
+    top: -2%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    width: 300px;
+    top: 30%;
+    left: 20%;
+  }
+
+  .intro_ufo {
+    width: 1000px;
+    height: 590px;
+    margin-left: -2.5%;
+    margin-top: 7%;
+  }
+
+  .intro_ufo img {
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .intro_bubble .bubble {
+    width: 90%;
+    margin-left: -5.5%;
+    top: -1.2%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 15%;
+  }
+
+  .intro_ufo {
+    width: 880px;
+    height: 580px;
+    margin-left: -3%;
+  }
+
+  .intro_ufo img {
+    width: 110px;
+  }
+}

@@ -1,0 +1,568 @@
+@charset "UTF-8";
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  font-family: Pretendard !important;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* outline: none; */
+  /* letter-spacing :-1px; */
+}
+
+.intro01 {
+  background-image: url("../../html/images/bg/bg_intro01.png");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_logo {
+  margin-top: 10px;
+  margin-left: -90%;
+  z-index: 9;
+}
+
+.intro_bubble {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_bubble .bubble {
+  width: 400px;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.intro_feelbot01 {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.feelbot {
+  position: fixed;
+  width: 250px;
+  animation: motion 0.5s linear 0s infinite alternate;
+}
+@keyframes motion {
+  0% {
+    margin-top: 14%;
+  }
+  100% {
+    margin-top: 14.5%;
+  }
+}
+
+.intro_emoji {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  width: 2000px;
+  height: 1080px;
+  margin-top: -6.8%;
+  margin-left: 1%;
+  -webkit-animation: spin 5s infinite linear;
+  -o-animation: spin 5s infinite linear;
+  -moz-animation: spin 5s infinite linear;
+  animation: spin 5s infinite linear;
+  animation-direction: alternate;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(10deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.intro_emoji img {
+  position: absolute;
+}
+
+.intro_emoji .angry {
+  top: 12%;
+  left: 40%;
+}
+
+.intro_emoji .boring {
+  top: 12%;
+  left: 54%;
+}
+
+.intro_emoji .bad {
+  left: 30%;
+  top: 28%;
+}
+
+.intro_emoji .excited {
+  left: 64%;
+  top: 28%;
+}
+
+.intro_emoji .happy {
+  left: 24%;
+  top: 45%;
+}
+
+.intro_emoji .laugh {
+  left: 69%;
+  top: 45%;
+}
+
+.intro_emoji .love {
+  left: 30%;
+  top: 66%;
+}
+
+.intro_emoji .sad {
+  left: 64%;
+  top: 66%;
+  top: 66%;
+}
+
+.intro_emoji .smile {
+  left: 38%;
+  top: 82%;
+}
+
+.intro_emoji .soso {
+  left: 54%;
+  top: 82%;
+}
+
+.intro_emoji img {
+  transition: all 0.5s;
+  animation: opacity 1s infinite alternate;
+}
+
+.intro_emoji a:hover img {
+  filter: drop-shadow(2px 2px 20px #fff);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1440px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 2%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 280px;
+    top: 12%;
+    left: 40%;
+  }
+
+  .intro_emoji {
+    margin-left: 0%;
+    margin-top: -12%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 3%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 320px;
+    top: 12%;
+    left: 37%;
+  }
+
+  .intro_emoji {
+    margin-left: -2%;
+    margin-top: -13%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    margin-left: -2%;
+    padding-top: 3%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 320px;
+    top: 12%;
+    left: 35%;
+  }
+
+  .intro_emoji {
+    margin-left: -2%;
+    margin-top: -14%;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .intro_logo {
+    width: 200px;
+  }
+  .intro_logo img {
+    width: 127px;
+    margin-left: 12%;
+  }
+
+  .intro_bubble {
+    margin-left: -2%;
+    padding-top: 3%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 320px;
+    top: 12%;
+    left: 35%;
+  }
+
+  .intro_emoji {
+    margin-left: -2%;
+    margin-top: -15%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 2%;
+  }
+
+  .intro_bubble .bubble {
+    top: 18%;
+    left: 30%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 280px;
+    top: 22%;
+    left: 36%;
+  }
+
+  .intro_emoji {
+    margin-left: 1%;
+    margin-top: -14%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    margin-left: 0%;
+    padding-top: 10%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 280px;
+    top: 20%;
+    left: 35%;
+  }
+
+  .intro_emoji {
+    width: 188%;
+    height: 84%;
+    margin-left: -1%;
+    margin-top: -20%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro_logo img {
+    width: 125px;
+    margin-left: 30%;
+  }
+
+  .intro_bubble {
+    margin-left: 2%;
+    padding-top: 23%;
+  }
+
+  .intro_bubble .bubble {
+    margin-top: -10%;
+    width: 70%;
+    margin-left: -15%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 240px;
+    top: 27%;
+    left: 35%;
+  }
+
+  .intro_emoji {
+    width: 165%;
+    height: 60%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+
+  .intro_emoji img {
+    width: 100px;
+  }
+
+  .intro_emoji .angry {
+    width: 9%;
+  }
+
+  .intro_emoji .happy {
+    width: 8.5%;
+  }
+
+  .intro_emoji .laugh {
+    width: 10%;
+  }
+
+  .intro_emoji .soso {
+    width: 9%;
+  }
+
+  .intro_emoji .smile {
+    width: 9%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .intro_logo img {
+    width: 125px;
+    margin-left: 30%;
+  }
+
+  .intro_bubble {
+    margin-left: 2%;
+    padding-top: 23%;
+  }
+
+  .intro_bubble .bubble {
+    margin-top: -17%;
+    margin-left: -19%;
+    width: 80%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 240px;
+    top: 27%;
+    left: 31%;
+  }
+
+  .intro_emoji {
+    width: 200%;
+    height: 60%;
+    margin-left: -2%;
+    margin-top: -10%;
+  }
+
+  .intro_emoji img {
+    width: 100px;
+  }
+
+  .intro_emoji .angry {
+    width: 9%;
+  }
+
+  .intro_emoji .happy {
+    width: 8.5%;
+  }
+
+  .intro_emoji .laugh {
+    width: 10%;
+  }
+
+  .intro_emoji .soso {
+    width: 9%;
+  }
+
+  .intro_emoji .smile {
+    width: 9%;
+  }
+  @keyframes motion {
+    0% {
+      margin-top: 16%;
+    }
+    100% {
+      margin-top: 17.6%;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro_logo img {
+    margin-left: 78px;
+  }
+
+  .intro_bubble {
+    margin-left: 2%;
+    padding-top: 23%;
+  }
+
+  .intro_bubble .bubble {
+    margin-top: -10%;
+    width: 80%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 300px;
+    top: 30%;
+    left: 21%;
+  }
+
+  .intro_emoji {
+    width: 170%;
+    height: 40%;
+    margin-left: -4%;
+    margin-top: 7%;
+  }
+
+  .intro_emoji img {
+    width: 80px;
+  }
+
+  .intro_emoji .excited {
+    width: 75px;
+  }
+
+  .intro_emoji .bad {
+    width: 78px;
+  }
+
+  .intro_emoji .happy {
+    width: 80px;
+  }
+
+  .intro_emoji .laugh {
+    width: 90px;
+  }
+
+  .intro_emoji .angry {
+    width: 90px;
+  }
+
+  .intro_emoji .boring {
+    width: 75px;
+  }
+
+  .intro_emoji .soso {
+    width: 85px;
+  }
+
+  .intro_emoji .smile {
+    width: 90px;
+  }
+
+  @keyframes motion {
+    0% {
+      margin-top: 16%;
+    }
+    100% {
+      margin-top: 17.6%;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .intro_logo img {
+    width: 125px;
+    margin-left: 40%;
+  }
+
+  .intro_bubble {
+    margin-left: 2%;
+    padding-top: 23%;
+  }
+
+  .intro_bubble .bubble {
+    margin-top: -10%;
+    margin-left: -25%;
+    width: 90%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 300px;
+    top: 28%;
+    left: 15%;
+  }
+
+  .intro_emoji {
+    width: 180%;
+    height: 36%;
+    margin-left: -6%;
+    margin-top: 7%;
+  }
+
+  .intro_emoji img {
+    width: 80px;
+  }
+
+  .intro_emoji .excited {
+    width: 75px;
+  }
+
+  .intro_emoji .bad {
+    width: 78px;
+  }
+
+  .intro_emoji .happy {
+    width: 80px;
+  }
+
+  .intro_emoji .laugh {
+    width: 90px;
+  }
+
+  .intro_emoji .angry {
+    width: 90px;
+  }
+
+  .intro_emoji .boring {
+    width: 75px;
+  }
+
+  .intro_emoji .soso {
+    width: 85px;
+  }
+
+  .intro_emoji .smile {
+    width: 90px;
+  }
+}

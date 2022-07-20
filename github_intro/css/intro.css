@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+.intro01 {
+  background-image: url("../images/intro/intro_ic03.png"),
+    url("../images/intro/intro_bg01.png");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_logo {
+  margin-top: 70px;
+}
+/* .intro_feelbot01 {margin-top:140px;} */
+.intro_feelbot01 {
+  margin-top: 120px;
+  position: relative;
+  display: flex;
+  animation: bounce 5.0s alternate infinite;
+}
+
+.intro_feelbot01::after {
+  content: "";
+  width: 30px;
+  height: 28px;
+  background: url(../images/intro/intro_ic04.png) no-repeat 50% 50% / cover;
+  position: absolute;
+  top: 152px;
+  left: 46%;
+  display: block;
+  animation: scaleBounce 0.6s alternate infinite;
+}
+
+@keyframes scaleBounce {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.intro_Box {
+  display: flex;
+}
+
+.intro_Box > .intro_Box01 {margin-top: -20px;}
+.intro_Box > .intro_Box01 > a {transform: scale(1); transition: all 0.5s; display: block;}
+.intro_Box > .intro_Box01 > a:hover {transform: scale(1.1); transition: all 0.5s;}
+
+.intro_Box > .intro_Box02 > ul {
+  align-items: center;
+  display: flex;
+  margin: 40px 120px 0 120px;
+}
+
+.intro_Box > .intro_Box02 > ul > li {
+  display: inline-block;
+  line-height: 30px;
+  margin-top: 0px;
+}
+
+.intro_Box > .intro_Box02 > ul > li:nth-child(2) {
+  margin-left: 10px;
+}
+
+.intro_Box > .intro_Box02 > ul > li:nth-child(2) > a > img {
+  width: 90px;
+  height: 90px;
+  vertical-align: bottom;
+}
+
+.intro_Box > .intro_Box02 > ul > li > .intro_Id > input {
+  background: url(../images/intro/login_id.png) no-repeat;
+  background-size: 189px 26px;
+  width: 189px;
+  height: 26px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  font-family: "LAB디지털" !important;
+}
+
+.intro_Box > .intro_Box02 > ul > li > .intro_Password > input {
+  background: url(../images/intro/login_pw.png) no-repeat;
+  background-size: 189px 26px;
+  width: 189px;
+  height: 26px;
+  padding-left: 40px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  font-family: "LAB디지털" !important;
+}
+
+.intro_Box > .intro_Box03 > a {transform: scale(1); transition: all 0.5s; display: block;} 
+.intro_Box > .intro_Box03 > a:hover {transform: scale(1.1); transition: all 0.5s;}
+
+.intro01 > .intro_Box > .intro_Box04 {display: none;}
+.intro01 > .intro_Box > .intro_Box05 {display: none;}
+
+.intro_Foot {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 130px;
+}
+
+.intro_Foot > span > a {
+  color: #fff;
+}
+
+.intro_Foot > .OP_language > select {
+  background-color: #322e36;
+  color: #fff;
+  width: 111px;
+  height: 35px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1065px) {
+  .intro_Box > .intro_Box02 > ul {
+    margin: 40px 5px 0 5px;
+  }
+  .intro_Box > .intro_Box01 > a > img {width: 90%;}
+  .intro_Box > .intro_Box03 > a > img {width: 90%;}
+  .intro01 > .intro_Box > .intro_Box04 {display: none;}
+  .intro01 > .intro_Box > .intro_Box05 {display: none;}
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .intro01 {
+    background-image: url(),
+    url("../images/intro/intro_bg01.png");
+    background-position: center bottom, center;
+    background-repeat: no-repeat, no-repeat;
+    height: 100%;
+  }
+
+  .intro_logo {
+    margin-top: 30px;
+  }
+
+  .intro01 > .intro_feelbot01 {justify-content: center;
+    margin-top: 70px;}
+  .intro01 > .intro_feelbot01 > img {width: 70%;}
+  .intro_feelbot01::after {
+    top: 100px;
+  }
+  .intro01 > .intro_Box {flex-flow: row wrap; justify-content: space-between;}
+  .intro01 > .intro_Box > .intro_Box02 {order: 1; width: 100%; flex: 1 1 100%;
+     display: flex; justify-content: center;}
+  .intro01 > .intro_Box > .intro_Box04 {order: 2; width: 50%; 
+    justify-content: flex-end; display: flex;
+    margin-top:30px;
+  }
+  .intro01 > .intro_Box > .intro_Box05 {order: 3; width: 50%;
+    justify-content: flex-start; display: flex; 
+    margin-top:39px;
+    padding-left:60px;}
+    
+  .intro01 > .intro_Box > .intro_Box01 {display: none;}
+  .intro01 > .intro_Box > .intro_Box03 {display: none;}
+  .intro_Foot {
+    margin-top: 80px;
+    padding-bottom: 20px;
+  }
+}

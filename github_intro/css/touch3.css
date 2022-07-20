@@ -1,0 +1,963 @@
+@charset "UTF-8";
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden; 
+  font-family: Pretendard !important;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  /* outline: none; */
+  /* letter-spacing :-1px; */
+}
+
+
+.intro01 {
+  background-image: url("../images/bg/bg_intro03.png");
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_logo {
+  margin-top: 10px;
+  margin-left: -90%;
+  z-index: 9;
+}
+
+.intro_bubble {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.intro_bubble .bubble {
+  width: 400px;
+  position: absolute;
+  margin-top: 10%;
+}
+
+.intro_feelbot01 {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.feelbot {
+  top: 37%;
+  position: absolute;
+  width: 250px;
+  transition: all 0.5s;
+  /* 둥둥 떠다니는 애니메이션 */
+  animation: ani 0.5s infinite alternate;
+}
+@keyframes ani {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 4px);
+  }
+}
+
+.intro_score {
+  background-position: center bottom, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  float: left;
+
+  margin-top: 119.62%;
+  margin-left: -108%;
+  width: 560px;
+}
+
+.intro_score img {
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  float: left;
+}
+
+.bar {
+  height: 67.5px;
+}
+
+.intro_score .e1 {
+  left: 35.4%;
+  opacity: 0.1;
+}
+.intro_score .e1:hover {
+  opacity: 0.9;
+}
+
+.intro_score .e2 {
+  left: 38.4%;
+  opacity: 0.1;
+}
+.intro_score .e2:hover {
+  opacity: 0.9;
+}
+
+.intro_score .e3 {
+  left: 41.38%;
+  opacity: 0.1;
+}
+.intro_score .e3:hover {
+  opacity: 0.9;
+}
+.intro_score .e4 {
+  left: 44.33%;
+  opacity: 0.1;
+}
+.intro_score .e4:hover {
+  opacity: 0.9;
+}
+.intro_score .e5 {
+  left: 47.3%;
+  opacity: 0.1;
+}
+.intro_score .e5:hover {
+  opacity: 0.9;
+}
+.intro_score .e6 {
+  left: 50.25%;
+  opacity: 0.1;
+}
+.intro_score .e6:hover {
+  opacity: 0.9;
+}
+.intro_score .e7 {
+  left: 53.2%;
+  opacity: 0.1;
+}
+.intro_score .e7:hover {
+  opacity: 0.9;
+}
+.intro_score .e8 {
+  left: 56.2%;
+  opacity: 0.1;
+}
+.intro_score .e8:hover {
+  opacity: 0.9;
+}
+.intro_score .e9 {
+  left: 59.2%;
+  opacity: 0.1;
+}
+.intro_score .e9:hover {
+  opacity: 0.9;
+}
+.intro_score .e10 {
+  width: 60px;
+  left: 62.28%;
+  opacity: 0.1;
+}
+.intro_score .e10:hover {
+  opacity: 0.9;
+}
+
+.rocket {
+  opacity: 0.8;
+  width: 300px;
+  position: absolute;
+  vertical-align: bottom;
+  border: none;
+  top: 30px;
+  right: -500px;
+  animation: motion 20s /* 속도 */ linear 0s; /* 처음부터 끝까지 일정 속도로 진행 */
+  /* infinite alternate; 무한 반복 */
+}
+@keyframes motion {
+  0% {
+    top: 40px;
+    left: -1000px;
+  } /* 처음 위치 */
+  100% {
+    top: 50px;
+    left: 10000px;
+  } /* 마지막 위치 */
+}
+
+.fire {
+  width: 50px;
+  position: absolute;
+  vertical-align: bottom;
+  border: none;
+  top: 58px;
+  right: -500px;
+  animation: motionfire 20s /* 속도 */ linear 0s; /* 처음부터 끝까지 일정 속도로 진행 */
+  /* infinite alternate; 무한 반복 */
+}
+@keyframes motionfire {
+  0% {
+    top: 70px;
+    left: -1050px;
+  } /* 처음 위치 */
+  100% {
+    left: 10000px;
+  } /* 마지막 위치 */
+}
+
+@media only screen and (max-width: 1440px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 2%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 280px;
+    top: 32%;
+    left: 40%;
+  }
+
+  .intro_emoji {
+    margin-left: 0%;
+    margin-top: -12%;
+  }
+  .bar {
+    height: 67px;
+  }
+
+  .intro_score .e1 {
+    left: 30.4%;
+    opacity: 0.1;
+  }
+  .intro_score .e1:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e2 {
+    left: 34.4%;
+    opacity: 0.1;
+  }
+  .intro_score .e2:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e3 {
+    left: 38.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e3:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e4 {
+    left: 42.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e4:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e5 {
+    left: 46.28%;
+    opacity: 0.1;
+  }
+  .intro_score .e5:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e6 {
+    left: 50.25%;
+    opacity: 0.1;
+  }
+  .intro_score .e6:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e7 {
+    left: 54.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e7:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e8 {
+    left: 58.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e8:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e9 {
+    left: 62.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e9:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e10 {
+    width: 60px;
+    left: 66.28%;
+    opacity: 0.1;
+  }
+  .intro_score .e10:hover {
+    opacity: 0.9;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .intro_logo img {
+    width: 125px;
+  }
+
+  .intro_bubble {
+    padding-top: 2%;
+  }
+  .intro_feelbot01 .feelbot {
+    width: 280px;
+    top: 32%;
+    left: 40%;
+  }
+
+  .intro_emoji {
+    margin-left: 0%;
+    margin-top: -12%;
+  }
+  .bar {
+    height: 67px;
+  }
+
+  .intro_score .e1 {
+    left: 28.4%;
+    opacity: 0.1;
+  }
+  .intro_score .e1:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e2 {
+    left: 32.8%;
+    opacity: 0.1;
+  }
+  .intro_score .e2:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e3 {
+    left: 37.15%;
+    opacity: 0.1;
+  }
+  .intro_score .e3:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e4 {
+    left: 41.5%;
+    opacity: 0.1;
+  }
+  .intro_score .e4:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e5 {
+    left: 45.9%;
+    opacity: 0.1;
+  }
+  .intro_score .e5:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e6 {
+    left: 50.25%;
+    opacity: 0.1;
+  }
+  .intro_score .e6:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e7 {
+    left: 54.6%;
+    opacity: 0.1;
+  }
+  .intro_score .e7:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e8 {
+    left: 58.9%;
+    opacity: 0.1;
+  }
+  .intro_score .e8:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e9 {
+    left: 63.3%;
+    opacity: 0.1;
+  }
+  .intro_score .e9:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e10 {
+    width: 60px;
+    left: 67.68%;
+    opacity: 0.1;
+  }
+  .intro_score .e10:hover {
+    opacity: 0.9;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro_bubble .bubble {
+    left: 34%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 39%;
+  }
+
+  .intro_score {
+    margin-left: 2;
+  }
+  .intro_score .e1 {
+    left: 26.6%;
+    opacity: 0.3;
+  }
+  .intro_score .e1:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e2 {
+    left: 31.3%;
+    opacity: 0.3;
+  }
+  .intro_score .e2:hover {
+    opacity: 0.9;
+  }
+
+  .intro_score .e3 {
+    left: 36.11%;
+    opacity: 0.3;
+  }
+  .intro_score .e3:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e4 {
+    left: 40.8%;
+    opacity: 0.3;
+  }
+  .intro_score .e4:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e5 {
+    left: 45.6%;
+    opacity: 0.3;
+  }
+  .intro_score .e5:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e6 {
+    left: 50.25%;
+    opacity: 0.3;
+  }
+  .intro_score .e6:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e7 {
+    left: 55%;
+    opacity: 0.3;
+  }
+  .intro_score .e7:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e8 {
+    left: 59.68%;
+    opacity: 0.3;
+  }
+  .intro_score .e8:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e9 {
+    left: 64.39%;
+    opacity: 0.3;
+  }
+  .intro_score .e9:hover {
+    opacity: 0.9;
+  }
+  .intro_score .e10 {
+    width: 60px;
+    left: 69.2%;
+    opacity: 0.3;
+  }
+  .intro_score .e10:hover {
+    opacity: 0.9;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .intro_logo {
+    width: 200px;
+  }
+  .intro_logo img {
+    width: 127px;
+    margin-left: 12%;
+  }
+
+  .intro_bubble {
+    margin-left: -2%;
+    padding-top: 3%;
+  }
+
+  .intro_score .e1 {
+    left: 25.9%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    left: 30.8%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    left: 35.7%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    left: 40.6%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    left: 45.5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    left: 50.35%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    left: 55.2%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    left: 60.1%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    left: 65%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 60px;
+    left: 69.9%;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .intro_logo {
+    width: 200px;
+  }
+
+  .intro_bubble {
+    margin-left: -2%;
+    padding-top: 3%;
+  }
+
+  .intro_bubble .bubble {
+    left: 31%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 37%;
+  }
+  .intro_score .e1 {
+    left: 22.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    left: 27.8%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    left: 33.4%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    left: 39%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    left: 44.58%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    left: 50.15%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    left: 55.8%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    left: 61.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    left: 66.9%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 60px;
+    left: 72.5%;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .intro_logo {
+    width: 200px;
+  }
+
+  .intro_bubble {
+    margin-left: -2%;
+    padding-top: 3%;
+  }
+
+  .intro_bubble .bubble {
+    left: 30%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 36%;
+  }
+  .intro_score .e1 {
+    left: 20.5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    left: 26.5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    left: 32.4%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    left: 38.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    left: 44.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    left: 50.2%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    left: 56.1%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    left: 62.1%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    left: 68%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 60px;
+    left: 74%;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro_logo {
+    width: 200px;
+  }
+
+  .intro_logo img {
+    margin-left: 30%;
+  }
+
+  .intro_bubble .bubble {
+    left: 26%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 33%;
+    top: 29%;
+  }
+  .intro_score .e1 {
+    left: 13%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    left: 20.5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    left: 27.8%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    left: 35.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    left: 42.7%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    left: 50.1%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    left: 57.6%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    left: 65%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    left: 72.45%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 60px;
+    left: 79.8%;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .intro_logo {
+    width: 200px;
+  }
+
+  .intro_logo img {
+    margin-left: 35%;
+  }
+
+  .intro_bubble .bubble {
+    left: 20%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 29%;
+    top: 29%;
+  }
+
+  .intro_score .bar {
+    width: 500px;
+    left: 10%;
+  }
+
+  .intro_score .e1 {
+    width: 47px;
+    height: 66px;
+    left: 13%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    width: 47px;
+    height: 66px;
+    left: 20.5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    width: 47px;
+    height: 66px;
+    left: 27.9%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    width: 47px;
+    height: 66px;
+    left: 35.3%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    width: 47px;
+    height: 66px;
+    left: 42.7%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    width: 47px;
+    height: 66px;
+    left: 50.1%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    width: 47px;
+    height: 66px;
+    left: 57.6%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    width: 47px;
+    height: 66px;
+    left: 65%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    width: 47px;
+    height: 66px;
+    left: 72.45%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 47px;
+    height: 66px;
+
+    left: 79.8%;
+    opacity: 0.3;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro_logo {
+    width: 300px;
+  }
+
+  .intro_logo img {
+    margin-left: 30%;
+  }
+
+  .intro_bubble .bubble {
+    left: 10%;
+    top: 10%;
+  }
+
+  .intro_feelbot01 .feelbot {
+    left: 21%;
+    top: 29%;
+  }
+
+  .intro_score .bar {
+    width: 480px;
+    left: 2%;
+  }
+
+  .intro_score .e1 {
+    width: 44px;
+    height: 66px;
+    left: 5%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e2 {
+    width: 44px;
+    height: 66px;
+    left: 13.6%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e3 {
+    width: 45px;
+    height: 66px;
+    left: 22.2%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e4 {
+    width: 46px;
+    height: 66px;
+    left: 30.9%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e5 {
+    width: 46px;
+    height: 66px;
+    left: 39.9%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e6 {
+    width: 46px;
+    height: 66px;
+    left: 49%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e7 {
+    width: 46px;
+    height: 66px;
+    left: 58%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e8 {
+    width: 46px;
+    height: 66px;
+    left: 67%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e9 {
+    width: 46px;
+    height: 66px;
+    left: 76%;
+    opacity: 0.3;
+  }
+
+  .intro_score .e10 {
+    width: 46px;
+    height: 66px;
+
+    left: 85%;
+    opacity: 0.3;
+  }
+}
